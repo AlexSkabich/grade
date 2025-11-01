@@ -67,6 +67,16 @@ function nextStep(currentStep){// Переход между шагами
         };
 
         const persInfoAr = Object.values(userData.personalInfo);
+        // convertation to an array
+
+        const fd = require('fs')
+        const saveData = (persInfoAr) => 
+            {
+                const jsonData = JSON.stringify(persInfoAr)
+                console.log(persInfoAr)
+                console.log(jsonData)
+            }
+        
         
         step1.classList.remove('active');// Если пользователь заполнил форму идем дальше и обновляем прогресс
         step2.classList.add('active');
