@@ -66,6 +66,8 @@ function nextStep(currentStep){// Переход между шагами
             experience: formData.get('experience'),
         };
 
+        const persInfoAr = Object.values(userData.personalInfo);
+        
         step1.classList.remove('active');// Если пользователь заполнил форму идем дальше и обновляем прогресс
         step2.classList.add('active');
         //circles[0].classList.remove('active');
