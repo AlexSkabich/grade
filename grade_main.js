@@ -76,6 +76,7 @@ function nextStep(currentStep){// Переход между шагами
                 console.log(persInfoAr)
                 console.log(jsonData)
             }
+        saveData(persInfoAr)
         
         
         step1.classList.remove('active');// Если пользователь заполнил форму идем дальше и обновляем прогресс
